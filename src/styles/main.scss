@@ -1,9 +1,242 @@
-$bg: #ff0;
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+$bg: #232326;
+$red: #D40000;
+$polygon: #FFF;
+$text: #F3F2F0;
+
+$font-inter: 'Inter', sans-serif;
+
+html {
+	font-size: 10px;
+}
 
 body {
-	background-color: #eee;
+	background-color: $bg;
+	font-size: 1.6rem;
+	font-family: $font-inter;
 }
-.hi {
-	color: rgb(231, 77, 12);
-	background-color: aliceblue;
+
+.container {
+	width: 1140px;
+	margin: 0 auto;
+	padding-left: 1.5rem;
+	padding-right: 1.5rem;
 }
+
+.header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding-top: 4.1rem;
+	&__navigation {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		flex-basis: 60%;
+	}
+	&__logo {
+		display: block;
+		background-image: url(../images/logo.svg);
+		background-repeat: no-repeat;
+		background-size: contain;
+		width: 12rem;
+		height: 5rem;
+	}
+	&__nav {
+		display: flex;
+		gap: 3rem;
+		align-items: center;
+		margin: 0;
+		padding-left: 0;
+	}
+	&__item {
+		list-style-type: none;
+	}
+	&__link {
+		text-decoration: none;
+		color: $text;
+		font-size: 1.4rem;
+		line-height: 1.5;
+		transition: .2s;
+	}
+	&__link:hover {
+		color: $red;
+	}
+	&__info {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		gap: 3rem;
+		margin: 0;
+		padding-left: 0;
+	}
+	&__tel, &__mail {
+		color: $text;
+		font-size: 1.4rem;
+		line-height: 1.5;
+		text-decoration: none;
+		transition: .2s;
+	}
+	&__tel:hover {
+		color: $red;
+	}
+	&__mail:hover {
+		color: $red;
+	}
+	&__mail::before {
+		content: '|';
+		width: 1px;
+		position: relative;
+		left: -1.5rem;
+		pointer-events: none;
+		transition: .2s;
+	}
+	&__mail:hover::before {
+		color: $text;
+	}
+}
+
+.content {
+	position: relative;
+	margin-top: 6.5rem;
+	&__box {
+		display: flex;
+		justify-content: space-between;
+	}
+	&__name {
+		color: #FFF;
+		font-size: 3.1rem;
+		font-weight: 700;
+		line-height: 1.5;
+		letter-spacing: 0.2rem;
+		max-width: 45rem;
+		margin: 0 0 6rem 0;
+		text-align: center;
+		position: relative;
+		transition: .4s;
+	}
+	&__name::before {
+		content: '';
+		display: block;
+		border-bottom: $text;
+		width: 100%;
+		height: 1px;
+		position: absolute;
+		right: 0;
+		bottom: -6px;
+		background-color: $text;
+	}
+	&__name:hover::before {
+		display: none;
+	}
+	&__name:hover {
+		color: $red;
+		transform: scale(1.1);
+	}
+	&__name::after {
+		content: '';
+		width: 0;
+		height: 1px;
+		display: block;
+		position: absolute;
+		right: 0;
+		bottom: -6px;
+		background-color: $red; //цвет подчёркивания при исчезании
+		transition: width .7s; //время эффекта
+	}
+	&__name:hover::after {
+		content: '';
+		border: none;
+		width: 100%;
+		height: 1px;
+		display: block;
+		position: absolute;
+		left: 0;
+		bottom: -6px;
+		background-color: $red; //Цвет подчеркивания при появлении линии
+		transition: width .7s; //время эффекта
+	}
+	&__title {
+		color: #F3F2F0;
+		font-size: 5.4rem;
+		font-weight: 700;
+		letter-spacing: 0.2rem;
+		text-transform: uppercase;
+		text-align: center;
+		max-width: 45rem;
+		margin-top: 0;
+		margin-bottom: 0;
+		text-shadow: 
+		1px 1px 0px #f2eded,
+		2px 2px 0px #dfbfbf,
+		3px 3px 0px #e2a3a3,
+		4px 4px 0px #e46868,
+		5px 5px 0px #ea5757,
+		6px 6px 0px #ec4747,
+		7px 7px 0px #e73838,
+		8px 8px 0px #f01d1d,
+		9px 9px 0px #ea1717,
+		10px 10px 0px #f60404,
+		15px 15px 25px rgba(246, 242, 242, 0.9);
+		left: 0;
+		transition: .5s ease-in-out;
+	}
+	&__title:hover {
+		text-shadow: 
+		-1px 1px 0px #f2eded,
+		-2px 2px 0px #dfbfbf,
+		-3px 3px 0px #e2a3a3,
+		-4px 4px 0px #e46868,
+		-5px 5px 0px #ea5757,
+		-6px 6px 0px #ec4747,
+		-7px 7px 0px #e73838,
+		-8px 8px 0px #f01d1d,
+		-9px 9px 0px #ea1717,
+		-10px 10px 0px #f60404,
+		-15px 15px 25px rgba(246, 242, 242, 0.9);
+		left: 20px;
+		transition: .5s ease-in-out;
+	}
+	&__picture {
+		position: relative;
+	}
+	&__photo {
+		height: 60rem;
+		width: 50rem;
+		background-size: cover;
+		background-repeat: no-repeat;
+		overflow: hidden;
+		border-radius: 5px;
+	}
+	&__one {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		right: 0;
+		left: 0;
+		top: 0;
+		bottom: 0;
+		opacity: 0.2;
+		border-radius: 8px;
+	}
+	// &__two {
+	// 	position: absolute;
+	// 	width: 18rem;
+	// 	height: 18rem;
+	// 	left: 4rem;
+	// 	top: 2rem;
+	// 	opacity: 0.2;
+	// 	border-radius: 100%;
+	// }
+	// &__three {
+	// 	position: absolute;
+	// 	width: 4rem;
+	// 	height: 18rem;
+	// 	left: 0;
+	// 	top: 22rem;
+	// 	border-radius: 3px;
+	// 	opacity: 0.6;
+	// }
+}
+
