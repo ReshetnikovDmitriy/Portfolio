@@ -76,7 +76,7 @@ body {
 		font-size: 1.4rem;
 		line-height: 1.5;
 		text-decoration: none;
-		transition: .2s;
+		transition: .1s;
 	}
 	&__tel:hover {
 		color: $red;
@@ -103,15 +103,21 @@ body {
 	&__box {
 		display: flex;
 		justify-content: space-between;
+		gap: 1.5rem;
+		padding: 1rem 0 1rem 0;
+	}
+	&__description {
+		flex-basis: 50%;
 	}
 	&__name {
 		color: #FFF;
 		font-size: 3.1rem;
 		font-weight: 700;
-		line-height: 1.5;
+		// line-height: 1.5;
 		letter-spacing: 0.2rem;
 		max-width: 45rem;
-		margin: 0 0 6rem 0;
+		margin: 0 auto 6rem auto;
+		padding-bottom: 1rem;
 		text-align: center;
 		position: relative;
 		transition: .4s;
@@ -165,8 +171,7 @@ body {
 		text-transform: uppercase;
 		text-align: center;
 		max-width: 45rem;
-		margin-top: 0;
-		margin-bottom: 0;
+		margin: 0 auto 0 auto;
 		text-shadow: 
 		1px 1px 0px #f2eded,
 		2px 2px 0px #dfbfbf,
@@ -199,44 +204,145 @@ body {
 		transition: .5s ease-in-out;
 	}
 	&__picture {
-		position: relative;
-	}
-	&__photo {
-		height: 60rem;
-		width: 50rem;
-		background-size: cover;
+		background-image: url(../images/foto.jpg);
 		background-repeat: no-repeat;
-		overflow: hidden;
+		background-size: cover;
+		background-position: center center;
+		height: 50rem;
+		width: 50rem;
 		border-radius: 5px;
 	}
-	&__one {
-		position: absolute;
+	&__gradient {
 		width: 100%;
 		height: 100%;
-		right: 0;
-		left: 0;
-		top: 0;
-		bottom: 0;
+		background-color: #D40000;
 		opacity: 0.2;
-		border-radius: 8px;
 	}
-	// &__two {
-	// 	position: absolute;
-	// 	width: 18rem;
-	// 	height: 18rem;
-	// 	left: 4rem;
-	// 	top: 2rem;
-	// 	opacity: 0.2;
-	// 	border-radius: 100%;
-	// }
-	// &__three {
-	// 	position: absolute;
-	// 	width: 4rem;
-	// 	height: 18rem;
-	// 	left: 0;
-	// 	top: 22rem;
-	// 	border-radius: 3px;
-	// 	opacity: 0.6;
-	// }
+	&__social {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		padding-top: 5rem;
+		padding-bottom: 5rem;
+		max-width: 100%;
+	}
+	&__discussion {
+		display: flex;
+		align-items: center;
+		position: relative;
+	}
+	&__discussion:hover:before {
+		content: '';
+		display: block;
+		width: 100%;
+		height: 1px;
+		left: 0;
+		bottom: -10px;
+		background-color: $text;
+		position: absolute;
+	}
+	&__project {
+		text-decoration: none;
+		color: $text;
+	}
+	&__arrow {
+		display: block;
+		padding: 5px 2px 2px 10px;
+	}
 }
+.social-media {
+	display: flex;
+	gap: 3rem;
+	&__item {
+		line-height: 1.5;
+	}
+	&__vk {
+		color: $text;
+		text-decoration: none;
+		// transition: .3s;
+	}
+	&__vk:hover {
+		color: $red;
+	}
+	&__ok {
+		color: $text;
+		text-decoration: none;
+		// transition: .3s;
+	}
+	&__ok:hover {
+		color: $red;
+	}
+	&__ok::before {
+		content: '|';
+		width: 1px;
+		position: relative;
+		left: -1.5rem;
+		pointer-events: none;
+		transition: none;
+	}
+	&__ok:hover::before {
+		color: $text;
+	}
+	&__in {
+		color: $text;
+		text-decoration: none;
+		// transition: .3s;
+	}
+	&__in:hover {
+		color: $red;
+	}
+	&__in::before {
+		content: '|';
+		width: 1px;
+		position: relative;
+		left: -1.5rem;
+		pointer-events: none;
+	}
+	&__in:hover::before {
+		color: $text;
+	}
+}
+// .line {
+// 	border-bottom: 1px solid $text;
+// }
+.content-footer {
+	display: flex;
+	justify-content: center;
+	gap: 1.5rem;
+	margin-top: 1rem;
+	margin-right: auto;
+	margin-left: auto;
+	text-align: center;
+	max-width: 90%;
+	&__item {
+		margin-bottom: 5px;
+	}
+	&__item_title {
+		color: $text;
+		font-weight: 700;
+		line-height: 1.5;
+		letter-spacing: 0.1rem;
+		text-transform: uppercase;
+		padding: 0 0 2rem 0;
+		margin-top: 0;
+		margin-bottom: 0;
+		transition: .3s;
+	}
+	&__item_title:hover {
+		color: $red;
+	}
+	&__item_description {
+		color: $text;
+		font-size: 1.4rem;
+		line-height: 1.5;
+		margin-top: 0;
+		margin-bottom: 0;
+		transition: .3s;
+	}
+	&__item_description:hover {
+		// color: $red;
+		scale: 1.2;
+	}
+}
+
 
