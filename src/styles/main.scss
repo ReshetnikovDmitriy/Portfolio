@@ -395,38 +395,7 @@ main {
 	&__figure {
 		grid-column: 1/3;
 		grid-row: 1/3;
-	}
-	&__one {
-		margin: 0;
-		text-align: center;
-		font-size: 1.7rem;
-		line-height: 1.5;
-		padding-bottom: 1.4rem;
-	}
-	&__gy {
-		display: flex;
-		justify-content: center;
-		gap: 1.5rem;
-		margin-top: 3rem;
-	}
-	&__google {
-		display: block;
-		background-image: url(../images/logo_gogle.svg);
-		background-repeat: no-repeat;
-		background-position: center center;
-		background-size: contain;
-		width: 15rem;
-		height: 15rem;
-	}
-	&__yandex {
-		display: block;
-		background-image: url(../images/logo_yandex.svg);
-		background-repeat: no-repeat;
-		background-position: center center;
-		background-size: contain;
-		width: 15rem;
-		height: 15rem;
-		margin-right: 0;
+		padding-right: 10rem;
 	}
 	&__item_a {
 		grid-column: 3/4;
@@ -444,6 +413,36 @@ main {
 		grid-column: 4/5;
 		grid-row: 2/3;
 	}
+	&__one {
+		margin: 0;
+		text-align: center;
+		font-size: 1.7rem;
+		line-height: 1.5;
+		padding-bottom: 1.4rem;
+	}
+	&__gy {
+		display: flex;
+		justify-content: center;
+		gap: 2rem;
+		margin-top: 3rem;
+	}
+	&__google {
+		background-image: url(../images/logo_gogle.svg);
+		background-repeat: no-repeat;
+		background-position: center center;
+		background-size: contain;
+		width: 15rem;
+		height: 15rem;
+	}
+	&__yandex {
+		background-image: url(../images/logo_yandex.svg);
+		background-repeat: no-repeat;
+		background-position: center center;
+		background-size: contain;
+		width: 15rem;
+		height: 15rem;
+		margin-right: 0;
+	}
 	&__grid_title {
 		font-weight: 700;
 		font-size: 1.7rem;
@@ -457,11 +456,99 @@ main {
 	}
 }
 
+// portfolio
+
+.portfolio-title {
+	position: relative;
+	margin-bottom: 14rem;
+	&__phrase {
+		color: $text;
+		font-size: 74px;
+		font-weight: 700;
+		text-transform: uppercase;
+		margin: 0;
+		z-index: 1;
+		position: relative;
+	}
+	&__circle {
+		width: 42rem;
+		height: 42rem;
+		border-radius: 100%;
+		background-color: #D40000;
+		position: absolute;
+		left: 35rem;
+		top: -10rem;
+		z-index: 0;
+	}
+}
+.container-color {
+	background: linear-gradient(180deg, #141416 0%, rgba(20, 20, 22, 0.00) 100%);
+}
+.portfolio-box {
+	padding-top: 10rem;
+	color: $text;
+	&__flex {
+		display: flex;
+		justify-content: space-between;
+		padding-bottom: 4rem;
+	}
+	&__item {
+		padding: 0;
+		line-height: 1.4;
+	}
+	&__title {
+		margin: 0;
+		font-size: 28px;
+		font-weight: 700;
+		padding-bottom: 4rem;
+	}
+	&__list {
+		margin: 0;
+		padding-left: 0;
+		list-style-type: none;
+		opacity: 0.8;
+	}
+	&__list_work {
+		padding-bottom: 2rem;
+	}
+	&__description {
+		padding-top: 2rem;
+		margin: 0;
+		opacity: 0.8;
+		font-weight: 700;
+	}
+	&__img_burger {
+		background-image: url(../images/burger.jpg);
+		background-position: center center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		width: 50rem;
+		height: 25rem;
+		border-radius: 5px;
+	}
+	&__img_gym {
+		background-image: url(../images/gym.jpg);
+		background-position: center center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		width: 50rem;
+		height: 25rem;
+		border-radius: 5px;
+	}
+	&__img_healthy {
+		background-image: url(../images/health.jpg);
+		background-position: center center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		width: 50rem;
+		height: 25rem;
+		border-radius: 5px;
+	}
+}
+
 .line {
 	border-bottom: 1px solid $text;
-	margin-bottom: 12rem;
-	width: 96%;
-	margin-left: 4rem;
+	margin-bottom: 6rem;
 }
 
 
