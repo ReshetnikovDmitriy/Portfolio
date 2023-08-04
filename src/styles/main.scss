@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
 
 $bg: #232326;
 $red: #D40000;
@@ -347,6 +347,8 @@ main {
 	}
 }
 
+// about
+
 .about {
 	margin-bottom: 18rem;
 }
@@ -454,10 +456,13 @@ main {
 		margin: 0;
 		padding-bottom: 1.4rem;
 	}
+	
 }
 
 // portfolio
-
+.portfolio {
+	margin-bottom: 18rem;
+}
 .portfolio-title {
 	position: relative;
 	margin-bottom: 14rem;
@@ -543,6 +548,250 @@ main {
 		width: 50rem;
 		height: 25rem;
 		border-radius: 5px;
+	}
+}
+.portfolio-best {
+	display: grid;
+	gap: 6rem;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: repeat(2, 20rem);
+	margin-bottom: 4rem;
+	&__item {
+		display: flex;
+		gap: 3rem;
+		align-items: center;
+	}
+	&__img {
+		flex-basis: 30%;
+		object-fit: cover;
+		object-position: center center;
+	}
+	&__text {
+		flex-basis: 40%;
+		line-height: 1.4;
+		text-align: left;
+	}
+	&__title {
+		margin: 0;
+		padding-bottom: 1rem;
+		font-weight: 600;
+	}
+	&__description {
+		margin: 0;
+		color: #F3F2F0;
+		font-size: 1.4rem;
+		opacity: 0.8;
+		letter-spacing: 0.1rem;
+	}
+}
+.portfolio-technology {
+	margin-top: 12rem;
+	&__title {
+		display: inline-block;
+		font-size: 2.8rem;
+		font-weight: 700;
+		margin-top: 0;
+		margin-bottom: 6rem;
+		text-align: left;
+	}
+	&__title:hover {
+		color: $red;
+		transition: .3s;
+	}
+	&__grid {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		grid-template-rows: repeat(3, 20rem);
+	}
+	&__item {
+		border: 1px solid $text;
+		width: 100%;
+		height: 100%;
+		box-sizing: border-box;
+		transition: .2s;
+		filter: grayscale(1);
+	}
+	&__item:hover {
+		background-color: $red;
+		filter: grayscale(0);
+	}
+	&__psd {
+		background-image: url(../images/technology/photoshop.svg);
+		background-repeat: no-repeat;
+		background-size: cover;
+		width: 10rem;
+		height: 10rem;
+		margin: 5rem auto 5rem auto;
+		transition: .3s;
+	}
+	&__psd:hover {
+		transform: scale(1.4);
+	}
+	&__ills {
+		background-image: url(../images/technology/illustr.svg);
+		background-repeat: no-repeat;
+		background-size: cover;
+		width: 10rem;
+		height: 10rem;
+		margin: 5rem auto 5rem auto;
+		transition: .3s;
+	}
+	&__ills:hover {
+		transform: scale(1.4);
+	}
+	&__github {
+		background-image: url(../images/technology/github.svg);
+		background-repeat: no-repeat;
+		background-size: cover;
+		width: 10rem;
+		height: 10rem;
+		margin: 5rem auto 5rem auto;
+		transition: .3s;
+	}
+	&__github:hover {
+		transform: scale(1.4);
+	}
+	&__git {
+		background-image: url(../images/technology/git.svg);
+		background-repeat: no-repeat;
+		background-size: cover;
+		width: 10rem;
+		height: 10rem;
+		margin: 5rem auto 5rem auto;
+		transition: .3s;
+	}
+	&__git:hover {
+		transform: scale(1.4);
+	}
+	&__wb {
+		background-image: url(../images/technology/webpack.svg);
+		background-repeat: no-repeat;
+		background-size: cover;
+		width: 10rem;
+		height: 10rem;
+		margin: 5rem auto 5rem auto;
+		transition: .3s;
+	}
+	&__wb:hover {
+		transform: scale(1.4);
+	}
+	&__html {
+		background-image: url(../images/technology/html.svg);
+		background-repeat: no-repeat;
+		background-size: cover;
+		width: 10rem;
+		height: 10rem;
+		margin: 5rem auto 5rem auto;
+		transition: .3s;
+	}
+	&__html:hover {
+		transform: scale(1.4);
+	}
+	&__css {
+		background-image: url(../images/technology/css.svg);
+		background-repeat: no-repeat;
+		background-size: cover;
+		width: 10rem;
+		height: 10rem;
+		margin: 5rem auto 5rem auto;
+		transition: .3s;
+	}
+	&__css:hover {
+		transform: scale(1.4);
+	}
+	&__sass {
+		background-image: url(../images/technology/sass.svg);
+		background-repeat: no-repeat;
+		background-size: cover;
+		width: 10rem;
+		height: 10rem;
+		margin: 5rem auto 5rem auto;
+		transition: .3s;
+	}
+	&__sass:hover {
+		transform: scale(1.4);
+	}
+	&__js {
+		background-image: url(../images/technology/js.svg);
+		background-repeat: no-repeat;
+		background-size: cover;
+		width: 10rem;
+		height: 10rem;
+		margin: 5rem auto 5rem auto;
+		transition: .3s;
+	}
+	&__js:hover {
+		transform: scale(1.4);
+	}
+}
+.item_ills {
+	border-left: none;
+	border-right: none;
+}
+.item_git {
+	border-top: none;
+}
+.item_wb {
+	border-top: none;
+	border-right: none;
+	border-left: none;
+}
+.item_html {
+	border-top: none;
+}
+.item_css {
+	border-top: none;
+}
+.item_sass {
+	border-top: none;
+	border-left: none;
+	border-right: none;
+}
+.item_js {
+	border-top: none;
+}
+
+// phases
+.phases {
+	margin-bottom: 18rem;
+}
+.phases-box {
+	color: $text;
+	&__title {
+		margin-top: 0;
+		margin-bottom: 6rem;
+		font-size: 2.8rem;
+		font-weight: 700;
+		letter-spacing: 0.1rem;
+		display: inline-block;
+		transition: 0.3s;
+	}
+	&__title:hover {
+		color: $red;
+	}
+	&__item {
+		display: flex;
+		justify-content: space-between;
+		gap: 3rem;
+		margin-bottom: 3rem;
+		padding-bottom: 3rem;
+		align-items: center;
+	}
+	&__do {
+		display: flex;
+		gap: 3rem;
+		margin: 0;
+		text-align: left;
+		font-size: 2.8rem;
+	}
+	&__number {
+		display: inline-block;display: flex;
+	}
+	&__description {
+		flex-basis: 50%;
+		margin: 0;
+		text-align: left;
+		opacity: 0.8;
 	}
 }
 
