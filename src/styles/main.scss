@@ -29,6 +29,7 @@ body {
 	justify-content: space-between;
 	align-items: center;
 	padding-top: 4.1rem;
+	letter-spacing: 0.09rem;
 	&__navigation {
 		display: flex;
 		justify-content: space-between;
@@ -259,6 +260,7 @@ main {
 	display: flex;
 	margin-left: 3rem;
 	gap: 3rem;
+	letter-spacing: 0.09rem;
 	&__item {
 		line-height: 1.5;
 	}
@@ -507,6 +509,7 @@ main {
 		font-size: 28px;
 		font-weight: 700;
 		padding-bottom: 4rem;
+		letter-spacing: 0.08rem;
 	}
 	&__list {
 		margin: 0;
@@ -516,12 +519,14 @@ main {
 	}
 	&__list_work {
 		padding-bottom: 2rem;
+		letter-spacing: 0.08rem;
 	}
 	&__description {
 		padding-top: 2rem;
 		margin: 0;
 		opacity: 0.8;
 		font-weight: 700;
+		letter-spacing: 0.08rem;
 	}
 	&__img_burger {
 		background-image: url(../images/burger.jpg);
@@ -557,6 +562,7 @@ main {
 	grid-template-columns: repeat(3, 1fr);
 	grid-template-rows: repeat(2, 20rem);
 	margin-bottom: 4rem;
+	letter-spacing: 0.1rem;
 	&__item {
 		display: flex;
 		gap: 3rem;
@@ -582,7 +588,7 @@ main {
 		color: #F3F2F0;
 		font-size: 1.4rem;
 		opacity: 0.8;
-		letter-spacing: 0.1rem;
+		letter-spacing: 0.13rem;
 	}
 }
 .portfolio-technology {
@@ -594,6 +600,7 @@ main {
 		margin-top: 0;
 		margin-bottom: 6rem;
 		text-align: left;
+		letter-spacing: 0.08rem;
 	}
 	&__title:hover {
 		color: $red;
@@ -755,7 +762,7 @@ main {
 // phases
 .phases {
 	margin-bottom: 18rem;
-	letter-spacing: 0.2rem;
+	letter-spacing: 0.09rem;
 }
 .phases-box {
 	color: $text;
@@ -793,6 +800,7 @@ main {
 		margin: 0;
 		text-align: left;
 		opacity: 0.8;
+		letter-spacing: 0.13rem;
 	}
 }
 
@@ -885,15 +893,12 @@ main {
 
 // contact
 
-.contact {
-	margin-bottom: 13rem;
-}
 .contact-header {
 	display: flex;
 	justify-content: space-between;
 	margin-bottom: 6rem;
 	text-align: left;
-	letter-spacing: 0.13rem;
+	letter-spacing: 0.09rem;
 	position: relative;
 	&__title {
 		font-size: 28px;
@@ -915,8 +920,10 @@ main {
 .contact-box {
 	display: flex;
 	justify-content: space-between;
+	margin-bottom: 13rem;
 	&__social {
 		align-items: end;
+		margin-left: 0;
 	}
 	&__form {
 		display: flex;
@@ -929,7 +936,7 @@ main {
 	&__label {
 		display: block;
 		font-size: 1.2rem;
-		letter-spacing: 0.13rem;
+		letter-spacing: 0.14rem;
 		color: $text;
 		opacity: 0.8;
 		padding-bottom: 1rem;
@@ -942,6 +949,7 @@ main {
 		font-size: 1.2rem;
 		outline: none;
 		background-color: rgba(64, 64, 70, 0.9);
+		color: $text;
 		border: none;
 		cursor: pointer;
 		width: 100%;
@@ -956,7 +964,7 @@ main {
 		padding: 2rem 2rem 2rem 2rem;
 		cursor: pointer;
 		width: 100%;
-		letter-spacing: 0.13rem;
+		letter-spacing: 0.14rem;
 		font-size: 1.2rem;
 	}
 	&__select:focus {
@@ -976,11 +984,7 @@ main {
 		height: 1rem;
 		top: 65%;
 		right: 2rem;
-		// transform: translateY(50%);
 		pointer-events: none;
-	}
-	&__option {
-		padding-bottom: 1rem;
 	}
 	&__button {
 		padding: 2rem 23rem;
@@ -989,7 +993,7 @@ main {
 		font-weight: 700;
 		color: $text;
 		border: none;
-		letter-spacing: 0.13rem;
+		letter-spacing: 0.14rem;
 		cursor: pointer;
 		transition: .3s;
 	}
@@ -1032,7 +1036,6 @@ main {
 	border-right: 4.5rem solid transparent;
 	border-bottom: 9rem solid $polygon;
 	position: absolute;
-	// z-index: 0;
 	left: -197px;
 	top: -18px;
 }
