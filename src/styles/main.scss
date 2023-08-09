@@ -270,15 +270,15 @@ main {
 	&__vk:hover {
 		color: $red;
 	}
-	&__ok {
+	&__teleg {
 		color: $text;
 		text-decoration: none;
 		// transition: .3s;
 	}
-	&__ok:hover {
+	&__teleg:hover {
 		color: $red;
 	}
-	&__ok::before {
+	&__teleg::before {
 		content: '|';
 		width: 1px;
 		position: relative;
@@ -286,7 +286,7 @@ main {
 		pointer-events: none;
 		transition: none;
 	}
-	&__ok:hover::before {
+	&__teleg:hover::before {
 		color: $text;
 	}
 	&__in {
@@ -798,6 +798,9 @@ main {
 
 // rate
 
+.rate {
+	margin-bottom: 18rem;
+}
 .rate-aside {
 	letter-spacing: 0.1rem;
 	line-height: 1.3;
@@ -880,6 +883,123 @@ main {
 	}
 }
 
+// contact
+
+.contact {
+	margin-bottom: 13rem;
+}
+.contact-header {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 6rem;
+	text-align: left;
+	letter-spacing: 0.13rem;
+	position: relative;
+	&__title {
+		font-size: 28px;
+		margin-top: 0;
+		margin-bottom: 0;
+		color: $text;
+		font-weight: 700;
+		flex-basis: 26%;
+		text-transform: uppercase;
+	}
+	&__description {
+		flex-basis: 50%;
+		margin-top: 0;
+		margin-bottom: 0;
+		font-size: 28px;
+		color: $text;
+	}
+}
+.contact-box {
+	display: flex;
+	justify-content: space-between;
+	&__social {
+		align-items: end;
+	}
+	&__form {
+		display: flex;
+		flex-direction: column;
+		letter-spacing: 0.1rem;
+	}
+	// &__telephone {
+	// 	position: relative;
+	// }
+	&__label {
+		display: block;
+		font-size: 1.2rem;
+		letter-spacing: 0.13rem;
+		color: $text;
+		opacity: 0.8;
+		padding-bottom: 1rem;
+		padding-top: 1rem;
+	}
+	&__input {
+		padding: 2rem;
+		text-align: left;
+		letter-spacing: 0.13rem;
+		font-size: 1.2rem;
+		outline: none;
+		background-color: rgba(64, 64, 70, 0.9);
+		border: none;
+		cursor: pointer;
+		width: 100%;
+		box-sizing: border-box;
+	}
+	&__select {
+		appearance: none;
+		border: none;
+		color: $text;
+		background-color: rgba(64, 64, 70, 0.9);
+		outline: none;
+		padding: 2rem 2rem 2rem 2rem;
+		cursor: pointer;
+		width: 100%;
+		letter-spacing: 0.13rem;
+		font-size: 1.2rem;
+	}
+	&__select:focus {
+		outline: none;
+	}
+	&__arrow {
+		position: relative;
+	}
+	&__arrow::after {
+		content: '';
+		position: absolute;
+		display: block;
+		background-image: url(../images/arrow.svg);
+		background-repeat: no-repeat;
+		background-size: contain;
+		width: 1rem;
+		height: 1rem;
+		top: 65%;
+		right: 2rem;
+		// transform: translateY(50%);
+		pointer-events: none;
+	}
+	&__option {
+		padding-bottom: 1rem;
+	}
+	&__button {
+		padding: 2rem 23rem;
+		margin-top: 4rem;
+		background-color: $red;
+		font-weight: 700;
+		color: $text;
+		border: none;
+		letter-spacing: 0.13rem;
+		cursor: pointer;
+		transition: .3s;
+	}
+	&__button:hover,
+	&__button:focus {
+		background-color: #EA0E00;
+	}
+}
+
+
 .line {
 	border-bottom: 1px solid $text;
 	margin-bottom: 6rem;
@@ -894,4 +1014,25 @@ main {
 	top: 14rem;
 	left: -4rem;
 	z-index: -1;
+}
+.ellipse-big {
+	width: 30rem;
+	height: 30rem;
+	border-radius: 100%;
+	background-color: #D40000;
+	position: absolute;
+	z-index: -1;
+	left: -165px;
+	top: -55px;
+}
+.polygon {
+	width: 0;
+	height: 0;
+	border-left: 4.5rem solid transparent;
+	border-right: 4.5rem solid transparent;
+	border-bottom: 9rem solid $polygon;
+	position: absolute;
+	// z-index: 0;
+	left: -197px;
+	top: -18px;
 }
