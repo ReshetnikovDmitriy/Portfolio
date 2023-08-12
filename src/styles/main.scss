@@ -7,12 +7,25 @@ $text: #F3F2F0;
 
 $font-inter: 'Inter', sans-serif;
 
+$r_minmob: 320px;
+$r_mob_360: 360px;
+$r_mob_400: 400px;
+$r_mob_500: 500px;
+$r_tab: 768px;
+$r_tab_900: 900px;
+$r_desk: 1000px;
+$r_desk_1120: 1120px;
+$r_desk_hd: 1200px;
+$r_desk_1280: 1280px;
+$r_desk_1350: 1350px;
+$r_desk_full_1750: 1750px;
+
 input:-webkit-autofill,
 input:-webkit-autofill:hover, 
 input:-webkit-autofill:focus,
-textarea:-webkit-autofill,
-textarea:-webkit-autofill:hover,
-textarea:-webkit-autofill:focus,
+// textarea:-webkit-autofill,
+// textarea:-webkit-autofill:hover,
+// textarea:-webkit-autofill:focus,
 select:-webkit-autofill,
 select:-webkit-autofill:hover,
 select:-webkit-autofill:focus {
@@ -45,6 +58,10 @@ body {
 	align-items: center;
 	padding-top: 4.1rem;
 	letter-spacing: 0.09rem;
+	gap: 5%;
+	@media (max-width: $r_desk_1280) {
+		gap: 2%;
+	}
 	&__navigation {
 		display: flex;
 		justify-content: space-between;
@@ -110,6 +127,15 @@ body {
 	}
 	&__mail:hover::before {
 		color: $text;
+	}
+	&__nav_button {
+		display: none;
+	}
+	&__tel_button {
+		display: none;
+	}
+	&__mail_button {
+		display: none;
 	}
 }
 
