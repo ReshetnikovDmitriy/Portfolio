@@ -11,8 +11,11 @@ $r_minimummob: 300px;
 $r_minmob: 320px;
 $r_mob_360: 360px;
 $r_mob_400: 400px;
+$r_mob_440: 440px;
 $r_mob_500: 500px;
+$r_mob_540: 540px;
 $r_mob_600: 600px;
+$r_mob_640: 640px;
 $r_tab: 768px;
 $r_tab_820: 820px;
 $r_tab_900: 900px;
@@ -1158,6 +1161,10 @@ main {
 			width: 44rem;
 			height: 22rem;
 		}
+		@media (max-width: $r_tab_900) {
+			width: 42rem;
+			height: 21rem;
+		}
 		@media (max-width: $r_mob_400) {
 			width: 40rem;
 			height: 20rem;
@@ -1183,6 +1190,10 @@ main {
 			width: 44rem;
 			height: 22rem;
 		}
+		@media (max-width: $r_tab_900) {
+			width: 42rem;
+			height: 21rem;
+		}
 		@media (max-width: $r_mob_400) {
 			width: 40rem;
 			height: 20rem;
@@ -1207,6 +1218,10 @@ main {
 		@media (max-width: $r_desk) {
 			width: 44rem;
 			height: 22rem;
+		}
+		@media (max-width: $r_tab_900) {
+			width: 42rem;
+			height: 21rem;
 		}
 		@media (max-width: $r_mob_400) {
 			width: 40rem;
@@ -1329,6 +1344,27 @@ main {
 }
 .portfolio-technology {
 	margin-top: 12rem;
+	@media (max-width: $r_desk_1120) {
+		margin-top: 12rem;
+	}
+	@media (max-width: $r_desk) {
+		margin-top: 10rem;
+	}
+	@media (max-width: $r_tab_900) {
+		margin-top: 8rem;
+	}
+	@media (max-width: $r_tab_820) {
+		margin-top: 7rem;
+	}
+	@media (max-width: $r_tab) {
+		margin-top: 6rem;
+	}
+	@media (max-width: $r_mob_500) {
+		margin-top: 5rem;
+	}
+	@media (max-width: $r_mob_440) {
+		margin-top: 4rem;
+	}
 	&__title {
 		display: inline-block;
 		font-size: 2.8rem;
@@ -1337,6 +1373,42 @@ main {
 		margin-bottom: 6rem;
 		text-align: left;
 		letter-spacing: 0.08rem;
+		@media (max-width: $r_desk_1120) {
+			margin-bottom: 5rem;
+		}
+		@media (max-width: $r_desk) {
+			margin-bottom: 4rem;
+		}
+		@media (max-width: $r_tab_900) {
+			text-align: center;
+			display: block;
+		}
+		@media (max-width: $r_tab) {
+			margin-bottom: 3rem;
+			font-size: 2.5rem;
+		}
+		@media (max-width: $r_mob_640) {
+			font-size: 2.4rem;
+		}
+		@media (max-width: $r_mob_600) {
+			font-size: 2.3rem;
+		}
+		@media (max-width: $r_mob_540) {
+			font-size: 2.2rem;
+		}
+		@media (max-width: $r_mob_500) {
+			font-size: 2.6rem;
+		}
+		@media (max-width: $r_mob_440) {
+			font-size: 2.4rem;
+		}
+		@media (max-width: $r_mob_360) {
+			font-size: 2.2rem;
+			margin-bottom: 2rem;
+		}
+		@media (max-width: $r_minmob) {
+			font-size: 2.1rem;
+		}
 	}
 	&__title:hover {
 		color: $red;
@@ -1345,7 +1417,35 @@ main {
 	&__grid {
 		display: grid;
 		grid-template-columns: repeat(3, 1fr);
-		grid-template-rows: repeat(3, 20rem);
+		grid-template-rows: repeat(3, 1fr);
+		@media (max-width: $r_tab_900) {
+			grid-template-columns: repeat(3, 18.5%);
+			justify-content: center;
+		}
+		@media (max-width: $r_tab_820) {
+			grid-template-columns: repeat(3, 18.8%);
+		}
+		@media (max-width: $r_tab) {
+			grid-template-columns: repeat(3, 19.8%);
+		}
+		@media (max-width: $r_mob_640) {
+			grid-template-columns: repeat(3, 21.8%);
+		}
+		@media (max-width: $r_mob_600) {
+			grid-template-columns: repeat(3, 22.8%);
+		}
+		@media (max-width: $r_mob_540) {
+			grid-template-columns: repeat(3, 23.8%);
+		}
+		@media (max-width: $r_mob_500) {
+			grid-template-columns: repeat(3, 26.8%);
+		}
+		@media (max-width: $r_mob_440) {
+			grid-template-columns: repeat(3, 28.8%);
+		}
+		@media (max-width: $r_mob_400) {
+			grid-template-columns: repeat(3, 30.5%);
+		}
 	}
 	&__item {
 		border: 1px solid $text;
@@ -1354,6 +1454,9 @@ main {
 		box-sizing: border-box;
 		transition: .2s;
 		filter: grayscale(1);
+		@media (max-width: $r_desk) {
+			filter: grayscale(0);
+		}
 	}
 	&__item:hover {
 		background-color: $red;
@@ -1367,6 +1470,20 @@ main {
 		height: 10rem;
 		margin: 5rem auto 5rem auto;
 		transition: .3s;
+		@media (max-width: $r_desk) {
+			width: 8rem;
+			height: 8rem;
+		}
+		@media (max-width: $r_desk_950) {
+			width: 7rem;
+			height: 7rem;
+			margin: 4rem auto 4rem auto;
+		}
+		@media (max-width: $r_tab_820) {
+			width: 6rem;
+			height: 6rem;
+			margin: 3rem auto 3rem auto;
+		}
 	}
 	&__psd:hover {
 		transform: scale(1.4);
@@ -1379,6 +1496,20 @@ main {
 		height: 10rem;
 		margin: 5rem auto 5rem auto;
 		transition: .3s;
+		@media (max-width: $r_desk) {
+			width: 8rem;
+			height: 8rem;
+		}
+		@media (max-width: $r_desk_950) {
+			width: 7rem;
+			height: 7rem;
+			margin: 4rem auto 4rem auto;
+		}
+		@media (max-width: $r_tab_820) {
+			width: 6rem;
+			height: 6rem;
+			margin: 3rem auto 3rem auto;
+		}
 	}
 	&__ills:hover {
 		transform: scale(1.4);
@@ -1391,6 +1522,20 @@ main {
 		height: 10rem;
 		margin: 5rem auto 5rem auto;
 		transition: .3s;
+		@media (max-width: $r_desk) {
+			width: 8rem;
+			height: 8rem;
+		}
+		@media (max-width: $r_desk_950) {
+			width: 7rem;
+			height: 7rem;
+			margin: 4rem auto 4rem auto;
+		}
+		@media (max-width: $r_tab_820) {
+			width: 6rem;
+			height: 6rem;
+			margin: 3rem auto 3rem auto;
+		}
 	}
 	&__github:hover {
 		transform: scale(1.4);
@@ -1403,6 +1548,20 @@ main {
 		height: 10rem;
 		margin: 5rem auto 5rem auto;
 		transition: .3s;
+		@media (max-width: $r_desk) {
+			width: 8rem;
+			height: 8rem;
+		}
+		@media (max-width: $r_desk_950) {
+			width: 7rem;
+			height: 7rem;
+			margin: 4rem auto 4rem auto;
+		}
+		@media (max-width: $r_tab_820) {
+			width: 6rem;
+			height: 6rem;
+			margin: 3rem auto 3rem auto;
+		}
 	}
 	&__git:hover {
 		transform: scale(1.4);
@@ -1415,6 +1574,20 @@ main {
 		height: 10rem;
 		margin: 5rem auto 5rem auto;
 		transition: .3s;
+		@media (max-width: $r_desk) {
+			width: 8rem;
+			height: 8rem;
+		}
+		@media (max-width: $r_desk_950) {
+			width: 7rem;
+			height: 7rem;
+			margin: 4rem auto 4rem auto;
+		}
+		@media (max-width: $r_tab_820) {
+			width: 6rem;
+			height: 6rem;
+			margin: 3rem auto 3rem auto;
+		}
 	}
 	&__wb:hover {
 		transform: scale(1.4);
@@ -1427,6 +1600,20 @@ main {
 		height: 10rem;
 		margin: 5rem auto 5rem auto;
 		transition: .3s;
+		@media (max-width: $r_desk) {
+			width: 8rem;
+			height: 8rem;
+		}
+		@media (max-width: $r_desk_950) {
+			width: 7rem;
+			height: 7rem;
+			margin: 4rem auto 4rem auto;
+		}
+		@media (max-width: $r_tab_820) {
+			width: 6rem;
+			height: 6rem;
+			margin: 3rem auto 3rem auto;
+		}
 	}
 	&__html:hover {
 		transform: scale(1.4);
@@ -1439,6 +1626,20 @@ main {
 		height: 10rem;
 		margin: 5rem auto 5rem auto;
 		transition: .3s;
+		@media (max-width: $r_desk) {
+			width: 8rem;
+			height: 8rem;
+		}
+		@media (max-width: $r_desk_950) {
+			width: 7rem;
+			height: 7rem;
+			margin: 4rem auto 4rem auto;
+		}
+		@media (max-width: $r_tab_820) {
+			width: 6rem;
+			height: 6rem;
+			margin: 3rem auto 3rem auto;
+		}
 	}
 	&__css:hover {
 		transform: scale(1.4);
@@ -1451,6 +1652,20 @@ main {
 		height: 10rem;
 		margin: 5rem auto 5rem auto;
 		transition: .3s;
+		@media (max-width: $r_desk) {
+			width: 8rem;
+			height: 8rem;
+		}
+		@media (max-width: $r_desk_950) {
+			width: 7rem;
+			height: 7rem;
+			margin: 4rem auto 4rem auto;
+		}
+		@media (max-width: $r_tab_820) {
+			width: 6rem;
+			height: 6rem;
+			margin: 3rem auto 3rem auto;
+		}
 	}
 	&__sass:hover {
 		transform: scale(1.4);
@@ -1463,6 +1678,20 @@ main {
 		height: 10rem;
 		margin: 5rem auto 5rem auto;
 		transition: .3s;
+		@media (max-width: $r_desk) {
+			width: 8rem;
+			height: 8rem;
+		}
+		@media (max-width: $r_desk_950) {
+			width: 7rem;
+			height: 7rem;
+			margin: 4rem auto 4rem auto;
+		}
+		@media (max-width: $r_tab_820) {
+			width: 6rem;
+			height: 6rem;
+			margin: 3rem auto 3rem auto;
+		}
 	}
 	&__js:hover {
 		transform: scale(1.4);
