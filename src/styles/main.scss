@@ -12,14 +12,17 @@ $r_minmob: 320px;
 $r_mob_360: 360px;
 $r_mob_400: 400px;
 $r_mob_500: 500px;
+$r_mob_600: 600px;
 $r_tab: 768px;
+$r_tab_820: 820px;
 $r_tab_900: 900px;
-$r_desk: 1000px;
+$r_desk_950: 950px;
+$r_desk: 1024px;
 $r_desk_1120: 1120px;
 $r_desk_hd: 1200px;
 $r_desk_1280: 1280px;
 $r_desk_1350: 1350px;
-$r_desk_full_1750: 1750px;
+
 
 input:-webkit-autofill,
 input:-webkit-autofill:hover, 
@@ -674,6 +677,18 @@ main {
 	@media (max-width: $r_desk_1120) {
 		margin-bottom: 16rem;
 	}
+	@media (max-width: $r_tab_900) {
+		margin-bottom: 14rem;
+	}
+	@media (max-width: $r_tab) {
+		margin-bottom: 12rem;
+	}
+	@media (max-width: $r_mob_500) {
+		margin-bottom: 10rem;
+	}
+	@media (max-width: $r_mob_400) {
+		// margin-bottom: 9rem;
+	}
 }
 .about-box {
 	font-size: 1.4rem;
@@ -961,14 +976,39 @@ main {
 .portfolio-title {
 	position: relative;
 	margin-bottom: 14rem;
+	@media (max-width: $r_tab_900) {
+		margin-bottom: 9rem;
+	}
+	@media (max-width: $r_tab) {
+		margin-bottom: 5rem;
+	}
+	@media (max-width: $r_mob_500) {
+		margin-bottom: 3rem;
+	}
+	@media (max-width: $r_mob_360) {
+		margin-bottom: 2rem;
+	}
 	&__phrase {
 		color: $text;
-		font-size: 74px;
+		font-size: 7.4rem;
 		font-weight: 700;
 		text-transform: uppercase;
 		margin: 0;
 		z-index: 1;
 		position: relative;
+		@media (max-width: $r_desk_1120) {
+			font-size: 6.8rem;
+		}
+		@media (max-width: $r_tab_900) {
+			font-size: 6.1rem;
+			text-align: center;
+		}
+		@media (max-width: $r_mob_400) {
+			font-size: 5.5rem;
+		}
+		@media (max-width: $r_mob_360) {
+			font-size: 5.2rem;
+		}
 	}
 	&__circle {
 		width: 42rem;
@@ -979,6 +1019,40 @@ main {
 		left: 35rem;
 		top: -10rem;
 		z-index: 0;
+		@media (max-width: $r_desk_1120) {
+			width: 38rem;
+			height: 38rem;
+			left: 32.5rem;
+		}
+		@media (max-width: $r_tab_900) {
+			width: 35rem;
+			height: 35rem;
+			top: -13rem;
+		}
+		@media (max-width: $r_tab) {
+			width: 32rem;
+			height: 32rem;
+			left: 27.5rem;
+			top: -12rem;
+		}
+		@media (max-width: $r_mob_500) {
+			width: 28rem;
+			height: 28rem;
+			left: 24.5rem;
+			top: -11rem;
+		}
+		@media (max-width: $r_mob_400) {
+			width: 25rem;
+			height: 25rem;
+			left: 20.5rem;
+			top: -9rem;
+		}
+		@media (max-width: $r_mob_360) {
+			width: 22rem;
+			height: 22rem;
+			left: 18.5rem;
+			top: -9rem;
+		}
 	}
 }
 .container-color {
@@ -987,10 +1061,29 @@ main {
 .portfolio-box {
 	padding-top: 10rem;
 	color: $text;
+	@media (max-width: $r_tab_900) {
+		padding-top: 4rem;
+	}
+	@media (max-width: $r_mob_500) {
+		padding-top: 3rem;
+	}
+	@media (max-width: $r_mob_360) {
+		padding-top: 2rem;
+	}
 	&__flex {
 		display: flex;
 		justify-content: space-between;
 		padding-bottom: 4rem;
+		@media (max-width: $r_tab_900) {
+			flex-direction: column;
+			align-items: center;
+			gap: 2rem;
+			padding-bottom: 4rem;
+		}
+		@media (max-width: $r_mob_500) {
+			gap: 1.5rem;
+			padding-bottom: 3.3rem;
+		}
 	}
 	&__item {
 		padding: 0;
@@ -998,10 +1091,20 @@ main {
 	}
 	&__title {
 		margin: 0;
-		font-size: 28px;
+		font-size: 2.8rem;
 		font-weight: 700;
 		padding-bottom: 4rem;
 		letter-spacing: 0.08rem;
+		@media (max-width: $r_desk_1120) {
+			font-size: 2.6rem;
+		}
+		@media (max-width: $r_tab_900) {
+			padding-bottom: 2rem;
+			font-size: 2.8rem;
+		}
+		@media (max-width: $r_tab) {
+			padding-bottom: 1rem;
+		}
 	}
 	&__list {
 		margin: 0;
@@ -1012,6 +1115,20 @@ main {
 	&__list_work {
 		padding-bottom: 2rem;
 		letter-spacing: 0.08rem;
+		@media (max-width: $r_desk_1120) {
+			font-size: 1.4rem;
+		}
+		@media (max-width: $r_tab_900) {
+			padding-bottom: 1rem;
+			font-size: 1.5rem;
+			letter-spacing: 0.15rem;
+		}
+		@media (max-width: $r_mob_360) {
+			letter-spacing: 0.11rem;
+		}
+		@media (max-width: $r_minmob) {
+			letter-spacing: 0.04rem;
+		}
 	}
 	&__description {
 		padding-top: 2rem;
@@ -1019,6 +1136,15 @@ main {
 		opacity: 0.8;
 		font-weight: 700;
 		letter-spacing: 0.08rem;
+		@media (max-width: $r_desk_1120) {
+			font-size: 1.4rem;
+		}
+		@media (max-width: $r_tab_900) {
+			padding-top: 1rem;
+		}
+		@media (max-width: $r_mob_500) {
+			padding-top: 0.5rem;
+		}
 	}
 	&__img_burger {
 		background-image: url(../images/burger.jpg);
@@ -1028,6 +1154,22 @@ main {
 		width: 50rem;
 		height: 25rem;
 		border-radius: 5px;
+		@media (max-width: $r_desk) {
+			width: 44rem;
+			height: 22rem;
+		}
+		@media (max-width: $r_mob_400) {
+			width: 40rem;
+			height: 20rem;
+		}
+		@media (max-width: $r_mob_360) {
+			width: 38rem;
+			height: 19rem;
+		}
+		@media (max-width: $r_minmob) {
+			width: 35.5rem;
+			height: 17rem;
+		}
 	}
 	&__img_gym {
 		background-image: url(../images/gym.jpg);
@@ -1037,6 +1179,22 @@ main {
 		width: 50rem;
 		height: 25rem;
 		border-radius: 5px;
+		@media (max-width: $r_desk) {
+			width: 44rem;
+			height: 22rem;
+		}
+		@media (max-width: $r_mob_400) {
+			width: 40rem;
+			height: 20rem;
+		}
+		@media (max-width: $r_mob_360) {
+			width: 38rem;
+			height: 19rem;
+		}
+		@media (max-width: $r_minmob) {
+			width: 35.5rem;
+			height: 17rem;
+		}
 	}
 	&__img_healthy {
 		background-image: url(../images/health.jpg);
@@ -1046,34 +1204,110 @@ main {
 		width: 50rem;
 		height: 25rem;
 		border-radius: 5px;
+		@media (max-width: $r_desk) {
+			width: 44rem;
+			height: 22rem;
+		}
+		@media (max-width: $r_mob_400) {
+			width: 40rem;
+			height: 20rem;
+		}
+		@media (max-width: $r_mob_360) {
+			width: 38rem;
+			height: 19rem;
+		}
+		@media (max-width: $r_minmob) {
+			width: 35.5rem;
+			height: 17rem;
+		}
 	}
 }
 .portfolio-best {
 	display: grid;
 	gap: 6rem;
 	grid-template-columns: repeat(3, 1fr);
-	grid-template-rows: repeat(2, 20rem);
-	margin-bottom: 4rem;
+	grid-template-rows: repeat(2, 1fr);
+	margin-bottom: 6rem;
 	letter-spacing: 0.1rem;
+	@media (max-width: $r_desk_hd) {
+		gap: 3rem;
+	}
+	@media (max-width: $r_desk) {
+		gap: 2.5rem;
+	}
+	@media (max-width: $r_tab_900) {
+		grid-template-columns: repeat(2, 27%);
+		grid-template-rows: repeat(3, 1fr);
+		gap: 2rem;
+		justify-content: center;
+		align-items: center;
+		justify-items: center;
+		margin-bottom: 4rem;
+	}
+	@media (max-width: $r_tab) {
+		grid-template-columns: repeat(1, 62%);
+		grid-template-rows: repeat(6, 9rem);
+		gap: 1rem;
+		margin-bottom: 2rem;
+	}
+	@media (max-width: $r_mob_600) {
+		grid-template-columns: repeat(1, 82%);
+	}
+	@media (max-width: $r_mob_500) {
+		margin-bottom: 1rem;
+	}
+	@media (max-width: $r_mob_400) {
+		grid-template-columns: repeat(1, 93%);
+	}
 	&__item {
+		align-self: start;
 		display: flex;
 		gap: 3rem;
 		align-items: center;
+		@media (max-width: $r_desk_1120) {
+			gap: 2rem;
+		}
+		@media (max-width: $r_tab_900) {
+			gap: 2rem;
+			flex-direction: column;
+		}
+		@media (max-width: $r_tab) {
+			flex-direction: row;
+		}
 	}
 	&__img {
 		flex-basis: 20%;
 		object-fit: cover;
 		object-position: center center;
+		@media (max-width: $r_tab_900) {
+			flex-basis: 77%;
+		}
+		@media (max-width: $r_tab) {
+			flex-basis: 20%;
+		}
 	}
 	&__text {
-		flex-basis: 40%;
+		flex-basis: 71%;
 		line-height: 1.4;
 		text-align: left;
+		@media (max-width: $r_desk_950) {
+			flex-basis: 55%;
+		}
+		@media (max-width: $r_tab_900) {
+			flex-basis: 100%;
+		}
 	}
 	&__title {
 		margin: 0;
 		padding-bottom: 1rem;
 		font-weight: 600;
+		@media (max-width: $r_tab_900) {
+			font-size: 1.5rem;
+			text-align: center;
+		}
+		@media (max-width: $r_tab) {
+			text-align: left;
+		}
 	}
 	&__description {
 		margin: 0;
@@ -1081,6 +1315,16 @@ main {
 		font-size: 1.4rem;
 		opacity: 0.8;
 		letter-spacing: 0.13rem;
+		@media (max-width: $r_tab_900) {
+			font-size: 1.3rem;
+			text-align: center;
+		}
+		@media (max-width: $r_tab) {
+			text-align: left;
+		}
+		@media (max-width: $r_mob_500) {
+			opacity: 1;
+		}
 	}
 }
 .portfolio-technology {
