@@ -1910,6 +1910,15 @@ main {
 
 .rate {
 	margin-bottom: 18rem;
+	@media (max-width: $r_desk_hd) {
+		margin-bottom: 16rem;
+	}
+	@media (max-width: $r_desk_1120) {
+		margin-bottom: 14rem;
+	}
+	@media (max-width: $r_desk) {
+		margin-bottom: 12rem;
+	}
 }
 .rate-aside {
 	letter-spacing: 0.1rem;
@@ -2156,39 +2165,88 @@ main {
 	text-align: left;
 	letter-spacing: 0.09rem;
 	position: relative;
+	@media (max-width: $r_tab_900) {
+		margin-bottom: 4rem;
+		flex-direction: column;
+		gap: 4rem;
+		align-items: center;
+	}
 	&__title {
-		font-size: 28px;
+		font-size: 2.8rem;
 		margin-top: 0;
 		margin-bottom: 0;
 		color: $text;
 		font-weight: 700;
 		flex-basis: 26%;
 		text-transform: uppercase;
+		@media (max-width: $r_desk) {
+			font-size: 2.7rem;
+		}
+		@media (max-width: $r_tab_900) {
+			font-size: 2.5rem;
+			width: 46rem;
+			margin-left: auto;
+			margin-right: auto;
+			text-align: center;
+		}
 	}
 	&__description {
 		flex-basis: 50%;
 		margin-top: 0;
 		margin-bottom: 0;
-		font-size: 28px;
+		font-size: 2.8rem;
 		color: $text;
+		@media (max-width: $r_desk_hd) {
+			font-size: 2.6rem;
+		}
+		@media (max-width: $r_desk) {
+			font-size: 2.4rem;
+		}
+		@media (max-width: $r_tab_900) {
+			font-size: 2.1rem;
+			text-align: center;
+			width: 46rem;
+			margin-left: auto;
+			margin-right: auto;
+			opacity: 0.8;
+		}
 	}
 }
 .contact-box {
 	display: flex;
 	justify-content: space-between;
 	margin-bottom: 13rem;
+	@media (max-width: $r_desk_hd) {
+		margin-bottom: 11rem;
+	}
+	@media (max-width: $r_desk_1120) {
+		margin-bottom: 8rem;
+	}
+	@media (max-width: $r_desk) {
+		margin-bottom: 7rem;
+	}
+	@media (max-width: $r_tab_900) {
+		margin-bottom: 5rem;
+		flex-direction: column-reverse;
+		gap: 4rem;
+	}
 	&__social {
 		align-items: end;
 		margin-left: 0;
+		@media (max-width: $r_tab_900) {
+			align-self: center;
+		}
 	}
 	&__form {
 		display: flex;
 		flex-direction: column;
 		letter-spacing: 0.1rem;
+		@media (max-width: $r_tab_900) {
+			margin-left: auto;
+			margin-right: auto;
+			width: 44rem;
+		}
 	}
-	// &__telephone {
-	// 	position: relative;
-	// }
 	&__label {
 		display: block;
 		font-size: 1.2rem;
@@ -2260,6 +2318,9 @@ main {
 		letter-spacing: 0.14rem;
 		cursor: pointer;
 		transition: .3s;
+		@media (max-width: $r_tab_900) {
+			padding: 2rem 17rem;
+		}
 	}
 	&__button:hover,
 	&__button:focus {
@@ -2347,6 +2408,10 @@ main {
 	z-index: -1;
 	left: -165px;
 	top: -55px;
+	@media (max-width: $r_tab_900) {
+		left: 32%;
+		top: -36%;
+	}
 }
 .polygon {
 	width: 0;
@@ -2355,6 +2420,9 @@ main {
 	border-right: 4.5rem solid transparent;
 	border-bottom: 9rem solid $polygon;
 	position: absolute;
-	left: -197px;
-	top: -18px;
+	left: -173px;
+	top: -33px;
+	@media (max-width: $r_tab_900) {
+		display: none;
+	}
 }
