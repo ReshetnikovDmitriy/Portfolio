@@ -1919,6 +1919,12 @@ main {
 	@media (max-width: $r_desk) {
 		margin-bottom: 12rem;
 	}
+	@media (max-width: $r_tab_900) {
+		margin-bottom: 11rem;
+	}
+	@media (max-width: $r_tab) {
+		margin-bottom: 10rem;
+	}
 }
 .rate-aside {
 	letter-spacing: 0.1rem;
@@ -2141,7 +2147,7 @@ main {
 			font-size: 3.8rem;
 		}
 		@media (max-width: $r_tab_900) {
-			font-size: 2.7rem;
+			font-size: 2.4rem;
 		}
 		@media (max-width: $r_mob_600) {
 			font-size: 2.2rem;
@@ -2151,7 +2157,14 @@ main {
 			padding-top: 3rem;
 		}
 		@media (max-width: $r_mob_400) {
+			font-size: 2rem;
 			padding-top: 3.7rem;
+		}
+		@media (max-width: $r_mob_360) {
+			font-size: 1.8rem;
+		}
+		@media (max-width: $r_minmob) {
+			padding-top: 5.3rem;
 		}
 	}
 }
@@ -2171,6 +2184,12 @@ main {
 		gap: 4rem;
 		align-items: center;
 	}
+	@media (max-width: $r_mob_600) {
+		gap: 2rem;
+	}
+	@media (max-width: $r_mob_500) {
+		margin-bottom: 3rem;
+	}
 	&__title {
 		font-size: 2.8rem;
 		margin-top: 0;
@@ -2188,6 +2207,25 @@ main {
 			margin-left: auto;
 			margin-right: auto;
 			text-align: center;
+		}
+		@media (max-width: $r_tab) {
+			font-size: 2.4rem;
+		}
+		@media (max-width: $r_mob_600) {
+			font-size: 2.3rem;
+		}
+		@media (max-width: $r_mob_400) {
+			font-size: 2.1rem;
+			width: 42rem;
+		}
+		@media (max-width: $r_mob_360) {
+			width: 38rem;
+		}
+		@media (max-width: $r_mob_360) {
+			width: 36rem;
+		}
+		@media (max-width: $r_minmob) {
+			width: 32rem;
 		}
 	}
 	&__description {
@@ -2210,6 +2248,24 @@ main {
 			margin-right: auto;
 			opacity: 0.8;
 		}
+		@media (max-width: $r_tab) {
+			font-size: 2rem;
+		}
+		@media (max-width: $r_mob_600) {
+			font-size: 1.8rem;
+		}
+		@media (max-width: $r_mob_400) {
+			width: 41rem;
+		}
+		@media (max-width: $r_mob_360) {
+			width: 38rem;
+		}
+		@media (max-width: $r_mob_360) {
+			width: 36rem;
+		}
+		@media (max-width: $r_minmob) {
+			width: 32rem;
+		}
 	}
 }
 .contact-box {
@@ -2226,15 +2282,19 @@ main {
 		margin-bottom: 7rem;
 	}
 	@media (max-width: $r_tab_900) {
-		margin-bottom: 5rem;
+		margin-bottom: 0;
 		flex-direction: column-reverse;
 		gap: 4rem;
+	}
+	@media (max-width: $r_mob_640) {
+		gap: 3rem;
 	}
 	&__social {
 		align-items: end;
 		margin-left: 0;
 		@media (max-width: $r_tab_900) {
 			align-self: center;
+			padding-right: 4%;
 		}
 	}
 	&__form {
@@ -2245,6 +2305,12 @@ main {
 			margin-left: auto;
 			margin-right: auto;
 			width: 44rem;
+		}
+		@media (max-width: $r_mob_400) {
+			width: 41rem;
+		}
+		@media (max-width: $r_mob_360) {
+			width: 32rem;
 		}
 	}
 	&__label {
@@ -2321,6 +2387,12 @@ main {
 		@media (max-width: $r_tab_900) {
 			padding: 2rem 17rem;
 		}
+		@media (max-width: $r_mob_400) {
+			padding: 2rem 15rem;
+		}
+		@media (max-width: $r_mob_400) {
+			padding: 2rem 11rem;
+		}
 	}
 	&__button:hover,
 	&__button:focus {
@@ -2395,8 +2467,13 @@ main {
 		top: 14.3rem;
 	}
 	@media (max-width: $r_mob_400) {
-		top: 15.8rem;
-		left: -2rem;
+		top: 15.5rem;
+	}
+	@media (max-width: $r_mob_360) {
+		left: -1rem;
+	}
+	@media (max-width: $r_minmob) {
+		top: 16.9rem;
 	}
 }
 .ellipse-big {
@@ -2411,6 +2488,51 @@ main {
 	@media (max-width: $r_tab_900) {
 		left: 32%;
 		top: -36%;
+	}
+	@media (max-width: $r_tab_820) {
+		left: 30%;
+		top: -34%;
+	}
+	@media (max-width: $r_tab) {
+		width: 28rem;
+		height: 28rem;
+		top: -29%;
+	}
+	@media (max-width: $r_mob_640) {
+		left: 26%;
+	}
+	@media (max-width: $r_mob_600) {
+		left: 28%;
+		top: -40%;
+		width: 24rem;
+		height: 24rem;
+	}
+	@media (max-width: $r_mob_540) {
+		left: 26%;
+		top: -46%;
+		width: 24rem;
+		height: 24rem;
+	}
+	@media (max-width: $r_mob_540) {
+		left: 33%;
+		top: -36%;
+		width: 20rem;
+		height: 20rem;
+	}
+	@media (max-width: $r_mob_440) {
+		left: 31%;
+	}
+	@media (max-width: $r_mob_400) {
+		left: 30%;
+		top: -22%;
+	}
+	@media (max-width: $r_mob_360) {
+		left: 26%;
+		top: -17%;
+	}
+	@media (max-width: $r_minmob) {
+		left: 22%;
+		top: -10%;
 	}
 }
 .polygon {
