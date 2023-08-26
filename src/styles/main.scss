@@ -2282,7 +2282,7 @@ main {
 		margin-bottom: 7rem;
 	}
 	@media (max-width: $r_tab_900) {
-		margin-bottom: 0;
+		margin-bottom: 4rem;
 		flex-direction: column-reverse;
 		gap: 4rem;
 	}
@@ -2508,12 +2508,12 @@ main {
 		height: 24rem;
 	}
 	@media (max-width: $r_mob_540) {
-		left: 26%;
+		left: 27%;
 		top: -46%;
-		width: 24rem;
-		height: 24rem;
+		width: 22rem;
+		height: 22rem;
 	}
-	@media (max-width: $r_mob_540) {
+	@media (max-width: $r_mob_500) {
 		left: 33%;
 		top: -36%;
 		width: 20rem;
@@ -2531,7 +2531,7 @@ main {
 		top: -17%;
 	}
 	@media (max-width: $r_minmob) {
-		left: 22%;
+		left: 23%;
 		top: -10%;
 	}
 }
