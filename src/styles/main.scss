@@ -2408,6 +2408,18 @@ main {
 		display: flex;
 		justify-content: space-between;
 		letter-spacing: 0.1rem;
+		@media (max-width: $r_desk_1120) {
+			justify-content: center;
+			gap: 5rem;
+		}
+		@media (max-width: $r_tab) {
+			gap: 3rem;
+			line-height: 1.5;
+			text-align: center;
+		}
+		@media (max-width: $r_mob_540) {
+			gap: 2rem;
+		}
 	}
 	&__text,
 	&__description,
@@ -2419,9 +2431,43 @@ main {
 		margin-bottom: 0;
 	}
 }
+.logo_footer {
+	@media (max-width: $r_desk_1120) {
+		display: none;
+	}
+}
+.navigation_footer {
+	@media (max-width: $r_desk_1120) {
+		justify-content: center;
+		flex-basis: 100%;
+	}
+}
+.nav-footer {
+	@media (max-width: $r_tab_900) {
+		display: flex;
+		gap: 3rem;
+		align-items: center;
+		justify-content: center;
+		margin: 0;
+		padding-left: 0;
+		flex-basis: 100%;
+	}
+	@media (max-width: $r_tab) {
+		gap: 2rem;
+	}
+	@media (max-width: $r_mob_540) {
+		gap: 1rem;
+	}
+	@media (max-width: $r_mob_400) {
+		flex-wrap: wrap;
+	}
+}
 .header-footer {
 	padding-top: 0;
 	padding-bottom: 4rem;
+	@media (max-width: $r_desk_1120) {
+		justify-content: center;
+	}
 }
 
 .line {
