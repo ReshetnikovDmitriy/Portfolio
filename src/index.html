@@ -40,7 +40,8 @@
 					</li>
 				</ul>
 				<div class="header__open">
-					<button href="#" class="header__nav_button"></button>
+					<!-- <button type="button" class="header__nav_button" onclick="document.getElementById('Notification').style.top = '0px'"></button> -->
+					<button type="button" class="header__nav_button" onclick="openModal()"></button>
 					<a href="tel:+79220012248" class="header__tel_button"></a>
 					<a href="mailto:reshetnikov.111@mail.ru" class="header__mail_button"></a>
 				</div>
@@ -485,5 +486,34 @@
 			</div>
 		</div>
 	</footer>
+	<div class="modal" id="Notification">
+		<ul class="nav-modal">
+			<li class="nav-modal__item">
+				<a href="#about" class="nav-modal__link">Обо мне</a>
+			</li>
+			<li class="nav-modal__item">
+				<a href="#portfolio" class="nav-modal__link">Портфолио</a>
+			</li>
+			<li class="nav-modal__item">
+				<a href="#phases" class="nav-modal__link">Этапы работ</a>
+			</li>
+			<li class="nav-modal__item">
+				<a href="#price" class="nav-modal__link">Цены</a>
+			</li>
+			<li class="nav-modal__item">
+				<a href="#contact" class="nav-modal__link">Обратная связь</a>
+			</li>
+		</ul>
+		<!-- <button type="button" class="burger-close" onclick="document.getElementById('Notification').style.visibility='hidden'"></button> -->
+		<button type="button" class="burger-close" onclick="closeModal()"></button>
+	</div>
+	<script>
+			function openModal() {
+				document.getElementById("Notification").style.top = "0px";
+			}
+			function closeModal() {
+				document.getElementById("Notification").style.top = "-800px";
+			}
+	</script>
 </body>
 </html>
