@@ -2153,19 +2153,19 @@ main {
 			font-size: 2.2rem;
 			padding-top: 0rem;
 		}
-		// @media (max-width: $r_mob_440) {
-		// 	padding-top: 3rem;
-		// }
+		@media (max-width: $r_mob_440) {
+			padding-top: 3rem;
+		}
 		@media (max-width: $r_mob_400) {
 			font-size: 2rem;
-			// padding-top: 3.7rem;
+			padding-top: 3.7rem;
 		}
 		@media (max-width: $r_mob_360) {
 			font-size: 1.8rem;
 		}
-		// @media (max-width: $r_minmob) {
-		// 	padding-top: 5.3rem;
-		// }
+		@media (max-width: $r_minmob) {
+			padding-top: 5.3rem;
+		}
 	}
 }
 
