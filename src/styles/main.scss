@@ -2598,14 +2598,16 @@ main {
 // 	 JS	open modal
 
 .modal {
-	background-color: #0c9f0e;
-	max-width: 80rem;
+	background-color: $text;
+	max-width: 67%;
+	border: 2px solid $red;
+	border-radius: 8px;
 	text-align: center;
 	position: absolute;
 	top: -800px;
 	left: 0;
 	right: 0;
-	margin: 20px auto 0;
+	margin: 0 auto 0;
 	padding: 40px 30px;
 	box-sizing: border-box;
 	transition: .5s;
@@ -2617,13 +2619,14 @@ main {
 	align-items: center;
 	gap: 3rem;
 	margin: 0;
+	padding-left: 0;
 	&__item {
 		list-style-type: none;
 	}
 	&__link {
 		text-decoration: none;
 		color: $red;
-		font-size: 1.4rem;
+		font-size: 1.8rem;
 		line-height: 1.5;
 	}
 }
